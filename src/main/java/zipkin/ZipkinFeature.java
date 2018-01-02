@@ -12,7 +12,7 @@ public class ZipkinFeature {
     public static Feature create(String localServiceName) {
         // create a zipkin reporter.
         AsyncReporter<Span> asyncReporter = AsyncReporter
-                .builder(URLConnectionSender.create("http://13.115.78.110:9411/api/v1/spans"))
+                .builder(URLConnectionSender.create("http://localhost:9411/api/v1/spans"))
                 .build();
 
         // create a zipkin tracing.
