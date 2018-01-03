@@ -16,9 +16,6 @@ public class MyApplication extends Application {
         // create a JAX-RS feature.
         Feature tracingFeature = ZipkinFeature.create("server");
 
-        // logging.
-        System.out.println("getSingletons");
-
         return new LinkedHashSet<>(Arrays.asList(tracingFeature));
     }
 }

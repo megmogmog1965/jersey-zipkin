@@ -20,12 +20,19 @@ cd docker-zipkin
 docker-compose up -d
 ```
 
-Open this project with IDE.
+Open this project as a maven project with IDE.
 
 * [IntelliJ IDEA]
 * [NetBeans]
 
 Choose ``main/Main.java``, then run ``main.Main`` class.
+You can access jersey server to register [Zipkin] tracing spans.
+
+* http://localhost:8080/myapp/front
+
+You can see [Zipkin] tracing logs.
+
+* http://localhost:9411
 
 
 [Jersey]:https://jersey.github.io/
