@@ -8,6 +8,11 @@ import java.util.Arrays;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
+/**
+ * Pure JAX-RS Application implementation.
+ *
+ * @deprecated YOU SHOUD USE org.glassfish.jersey.server.ResourceConfig FOR JERSEY.
+ */
 @ApplicationPath("")
 public class MyApplication extends Application {
 
